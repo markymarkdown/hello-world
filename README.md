@@ -1,37 +1,56 @@
-## Welcome to GitHub Pages
+# Aviator
 
-You can use the [editor on GitHub](https://github.com/markymarkdown/hello-world/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+API documentation template for Jekyll. Browse through a [live demo](https://tangerine-lemon.cloudvent.net/).
+Start documenting your API with this configurable theme.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![Aviator template screenshot](images/_screenshot.png)
 
-### Markdown
+Aviator was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
 
-```markdown
-Syntax highlighted code block
+## Features
 
-# Header 1
-## Header 2
-### Header 3
+* Three column layout
+* Fully responsive
+* Full text search
+* Pre-styled components
+* Auto-generated navigation based on category
+* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
+* SEO tags
+* Google Analytics
 
-- Bulleted
-- List
+## Setup
 
-1. Numbered
-2. List
+1. Add your site and author details in `_config.yml`.
+2. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
 
-**Bold** and _Italic_ and `Code` text
+## Develop
 
-[Link](url) and ![Image](src)
-```
+Aviator was built with [Jekyll](http://jekyllrb.com/) version 3.7.2, but should support newer versions as well.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Install the dependencies with [Bundler](http://bundler.io/):
 
-### Jekyll Themes
+~~~bash
+$ bundle install
+~~~
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/markymarkdown/hello-world/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Run `jekyll` commands through Bundler to ensure you're using the right versions:
 
-### Support or Contact
+~~~bash
+$ bundle exec jekyll serve
+~~~
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Editing
+
+Aviator is already optimised for adding, updating and removing documentation pages in CloudCannon.
+
+### Usage
+
+* Each section is a different collection, this helps organise your content.
+* Set the order of the collections with the position field in collection configuration in `_config.yml`.
+* Set the order of the documents inside a collection by setting the position in front matter.
+
+### Search
+
+* Add `excluded_in_search: true` to any documentation page's front matter to exclude that page in the search results.
