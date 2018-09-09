@@ -3,7 +3,7 @@
 
 title: Aviator
 description: Jekyll template for API documentation.
-url: markymarkdown.github.io
+# url: markymarkdown.github.io
 google_analytics_key:
 permalink: pretty
 
